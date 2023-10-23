@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - s3-site
-      - s3-site-using-modules
+      - s3-site-using-module
 
 jobs:
   s3-site-branch-job:
@@ -34,10 +34,10 @@ jobs:
     - name: Terraform Apply
       run: terraform apply -auto-approve
 
-  s3-site-using-modules-branch-job:
+  s3-site-using-module-branch-job:
     name: Terraform deploy from ${{ github.ref }}
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/s3-site-using-modules'
+    if: github.ref == 'refs/heads/s3-site-using-module'
 
     defaults:
       run:
