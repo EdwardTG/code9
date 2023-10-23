@@ -41,7 +41,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: terraform/s3-site-using-modules
+        working-directory: terraform/s3-site-using-module
 
     steps:
     - name: Checkout Repo
