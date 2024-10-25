@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "aceshigh" {
+resource "aws_s3_bucket" "clansman" {
   bucket = "${local.state_bucket_name}-${random_pet.pet.id}"
 }
 
