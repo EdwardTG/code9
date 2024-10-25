@@ -36,8 +36,5 @@ jobs:
       run: terraform plan
 
     - name: Terraform Apply
-      uses: trstringer/manual-approval@v1
-      with:
-        minimum-approvals: 1
-        run: terraform apply -auto-approve
+      run: terraform apply -auto-approve
 
