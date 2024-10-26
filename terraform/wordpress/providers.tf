@@ -12,7 +12,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "runtothehils-state-nearby-weasel"
+    bucket = "runtothehils-state-fast-lionfish"
     key    = "terraform/wordpress"
     region = "us-east-1"
   }
